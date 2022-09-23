@@ -1,0 +1,1 @@
+﻿set rowcount 5 select Id from Cars while @@ROWCOUNT>0 delete Cars where 1< (select count(*) from Cars u where Cars.Id= u.Id) SET ROWCOUNT 0
